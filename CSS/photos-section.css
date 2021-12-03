@@ -1,0 +1,80 @@
+/*------part-container_photo------*/
+.container-photo{
+    transform: translateY(-200px);
+}
+.container-photo .container .photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
+}
+.container-photo .container .photos .photo{
+    padding: 5px 10px 130px;
+    line-height: 20px;
+}
+.container-photo .container .photos a:nth-child(1) .photo{
+    background-image: url(../Photo/new_photo.jpg);
+    background-size: cover;
+}
+.container-photo .container .photos a:nth-child(2) .photo{
+    background-image: url(../Photo/photo-write.jpg);
+    background-size: cover;
+}
+.container-photo .container .photos a:nth-child(3) .photo{
+    background-image: url(../Photo/shutterstock_105192071-ConvertImage.jpg);
+    background-size: cover;
+}
+.container-photo .container .photos a:nth-child(4) .photo{
+    background-image: url(../Photo/photo_camera.jpg);
+    background-size: cover;
+}
+.container .photos a:nth-child(5) .photo{
+    background-image: url(../Photo/photo-s.jpg);
+    background-size: cover;
+}
+.container-photo .container .photos a:nth-child(6) .photo{
+    background-image: url(../Photo/shutterstock_302252084.jpg);
+    background-size: cover;
+}
+.container-photo .container .photos a:nth-child(7) .photo{
+    background-image: url(../Photo/shutterstock_484881271.jpg);
+    background-size: cover;
+}
+.container-photo .container .photos a:nth-child(8) .photo{
+    background-image: url(../Photo/rawpixel-com-211022-\ \(image\ gratuite\ unsplash\).jpg);
+    background-size: cover;
+}
+.container-photo .container .photos .photo p:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container-photo .container .photos .photo p{
+    color: white;
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+@media (max-width: 992px) {
+    .container-photo{
+        transform: translateY(0);
+        margin: 50px 20px;
+    }
+    .container-photo .container .photos{
+        grid-template-columns: repeat(auto-fill,minmax(50% , 1fr));
+    }
+    .container-photo .container .photos .photo{
+        padding-bottom: 190px ;
+    }
+
+}
+@media (max-width:767px){
+    .container-photo .container .photos{
+        grid-template-columns: repeat(auto-fill,minmax(100% , 1fr));
+
+    }
+    .container-photo .container .photos .photo{
+        padding-bottom: 140px ;
+    }
+    .container-photo .container .photos a:nth-child(2n) .photo{
+        text-align: right;
+    }
+
+}
+/*-----end-container-photo-----*/
